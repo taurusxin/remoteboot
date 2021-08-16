@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B6514B32314380D00587DF6 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6514B12314380D00587DF6 /* GCDAsyncUdpSocket.m */; };
 		3B65448D230D007200BDB98E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B65448C230D007200BDB98E /* AppDelegate.swift */; };
 		3B65448F230D007200BDB98E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B65448E230D007200BDB98E /* ViewController.swift */; };
 		3B654492230D007200BDB98E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B654490230D007200BDB98E /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		3B654497230D007300BDB98E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B654495230D007300BDB98E /* LaunchScreen.storyboard */; };
 		3B6544A2230D007300BDB98E /* remotebootTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6544A1230D007300BDB98E /* remotebootTests.swift */; };
 		3B6544AD230D007300BDB98E /* remotebootUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6544AC230D007300BDB98E /* remotebootUITests.swift */; };
+		3B71030A23216AA1007C826F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B71030923216AA1007C826F /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B6514B02314380C00587DF6 /* remoteboot-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "remoteboot-Bridging-Header.h"; sourceTree = "<group>"; };
+		3B6514B12314380D00587DF6 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = GCD/GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		3B6514B22314380D00587DF6 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = GCD/GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
 		3B654489230D007200BDB98E /* remoteboot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = remoteboot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B65448C230D007200BDB98E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B65448E230D007200BDB98E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,7 @@
 		3B6544A8230D007300BDB98E /* remotebootUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = remotebootUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B6544AC230D007300BDB98E /* remotebootUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = remotebootUITests.swift; sourceTree = "<group>"; };
 		3B6544AE230D007300BDB98E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B71030923216AA1007C826F /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +103,16 @@
 		3B65448B230D007200BDB98E /* remoteboot */ = {
 			isa = PBXGroup;
 			children = (
+				3B6514B22314380D00587DF6 /* GCDAsyncUdpSocket.h */,
+				3B6514B12314380D00587DF6 /* GCDAsyncUdpSocket.m */,
 				3B65448C230D007200BDB98E /* AppDelegate.swift */,
 				3B65448E230D007200BDB98E /* ViewController.swift */,
 				3B654490230D007200BDB98E /* Main.storyboard */,
 				3B654493230D007300BDB98E /* Assets.xcassets */,
 				3B654495230D007300BDB98E /* LaunchScreen.storyboard */,
 				3B654498230D007300BDB98E /* Info.plist */,
+				3B6514B02314380C00587DF6 /* remoteboot-Bridging-Header.h */,
+				3B71030923216AA1007C826F /* Utils.swift */,
 			);
 			path = remoteboot;
 			sourceTree = "<group>";
@@ -193,6 +203,7 @@
 				TargetAttributes = {
 					3B654488230D007200BDB98E = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 					3B65449C230D007300BDB98E = {
 						CreatedOnToolsVersion = 10.3;
@@ -257,7 +268,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B65448F230D007200BDB98E /* ViewController.swift in Sources */,
+				3B6514B32314380D00587DF6 /* GCDAsyncUdpSocket.m in Sources */,
 				3B65448D230D007200BDB98E /* AppDelegate.swift in Sources */,
+				3B71030A23216AA1007C826F /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,7 +445,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 24EV7QSL62;
 				INFOPLIST_FILE = remoteboot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -440,6 +455,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuxin.remoteboot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "remoteboot/remoteboot-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -449,7 +466,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 24EV7QSL62;
 				INFOPLIST_FILE = remoteboot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -457,6 +476,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuxin.remoteboot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "remoteboot/remoteboot-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

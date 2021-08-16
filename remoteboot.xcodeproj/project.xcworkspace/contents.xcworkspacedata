@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:remoteboot.xcodeproj">
+      location = "group:../SwiftSocket-2.1.0">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
